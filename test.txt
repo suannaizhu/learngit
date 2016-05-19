@@ -1,0 +1,4 @@
+disk_asynch_io                       boolean     FALSE
+alter system set disk_asynch_io=TRUE scope=SPFILE;
+
+
