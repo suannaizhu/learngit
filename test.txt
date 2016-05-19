@@ -1,0 +1,36 @@
+Sun May 08 10:43:00 CST 2016
+MMNL absent for 1203 secs; Foregrounds taking over
+Sun May 08 10:55:43 CST 2016
+MMNL absent for 1906 secs; Foregrounds taking over
+Sun May 08 11:15:45 CST 2016
+MMNL absent for 1202 secs; Foregrounds taking over
+Sun May 08 12:51:38 CST 2016
+MMNL absent for 6896 secs; Foregrounds taking over
+Sun May 08 13:00:41 CST 2016
+Thread 1 cannot allocate new log, sequence 148370
+Private strand flush not complete
+  Current log# 6 seq# 148369 mem# 0: /pool_1/M1/oradata/redo06a.log
+Sun May 08 13:06:48 CST 2016
+Thread 1 advanced to log sequence 148370 (LGWR switch)
+  Current log# 7 seq# 148370 mem# 0: /pool_1/M1/oradata/redo07a.log
+Sun May 08 13:26:21 CST 2016
+ORA-01555 caused by SQL statement below (SQL ID: 89qyn4bbt03jq, Query Duration=8320 sec, SCN: 0x000e.c588eed0):
+Sun May 08 13:26:21 CST 2016
+SELECT /*+ USE_HASH(f a) */ SUM(NVL(F.BYTES - NVL(A.BYTES, 0), 0)/1024/1024), SUM(NVL(F.BYTES, 0)/1024/1024) FROM (SELECT DISTINCT TABLESPACE_NAME FROM USER_TABLES) U, (SELECT TABLESPACE_NAME, SUM(BYTES) BYTES FROM DBA_DATA_FILES GROUP BY TABLESPACE_NAME) F, (SELECT TABLESPACE_NAME, SUM(BYTES) BYTES FROM DBA_FREE_SPACE GROUP BY TABLESPACE_NAME) A WHERE A.TABLESPACE_NAME = U.TABLESPACE_NAME AND F.TABLESPACE_NAME = U.TABLESPACE_NAME
+Sun May 08 21:10:41 CST 2016
+Thread 1 advanced to log sequence 148371 (LGWR switch)
+  Current log# 8 seq# 148371 mem# 0: /pool_1/M1/oradata/redo08a.log
+Mon May 09 08:01:02 CST 2016
+Thread 1 cannot allocate new log, sequence 148372
+Private strand flush not complete
+  Current log# 8 seq# 148371 mem# 0: /pool_1/M1/oradata/redo08a.log
+Mon May 09 08:03:20 CST 2016
+Thread 1 advanced to log sequence 148372 (LGWR switch)
+  Current log# 9 seq# 148372 mem# 0: /pool_1/M1/oradata/redo09a.log
+Mon May 09 08:04:06 CST 2016
+Thread 1 cannot allocate new log, sequence 148373
+Private strand flush not complete
+  Current log# 9 seq# 148372 mem# 0: /pool_1/M1/oradata/redo09a.log
+Mon May 09 08:05:14 CST 2016
+Thread 1 advanced to log sequence 148373 (LGWR switch)
+  Current log# 10 seq# 148373 mem# 0: /pool_1/M1/oradata/redo10a.log
